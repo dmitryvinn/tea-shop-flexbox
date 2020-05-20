@@ -1,4 +1,5 @@
 body {
+    margin-top: 0;
     font-family: Helvetica;
     font-size: 22px;
     color: seashell;
@@ -6,17 +7,25 @@ body {
     opacity: 0.9;
     text-align: center;
 }
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 li {
     list-style-type: none;
 }
 
-.logo {
+.logo img {
+    display: block;
     height: 50px;
     margin-left: 10px;
 }
 
 .navbar {
+    background-color: black;
+    margin-top: 0;
     position: fixed;
     width: 100%;
     display: flex;
@@ -35,27 +44,91 @@ li {
 }
 
 .hero {
-    position: relative;
-    top: 70px;
-    display: flex;
-    flex-basis: 1200px;
-    height: 700px;
-    /* margin-top: 140px; */
-}
-
-.hero .background {
     background-image: url("../assets/img-mission-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    width: 1200px;
+    position: relative;
+    top: 70px;
+    display: flex;
+    height: 700px;
     flex-direction: column;
-    /* align-self: center; */
+    justify-content: center;
+    align-items: center;
 }
 
 .highlight {
-    /* display: block;
-    margin-top: auto;
-    margin-bottom: auto; */
-    margin-top: 300px;
-    /* padding: 10px; */
     background-color: black;
+}
+
+.highlight .mission {
+    padding-top: 5px;
+}
+
+.highlight .tagline {
+    padding-bottom: 5px;
+}
+
+.container {
+    align-items: center;
+    margin-top: 100px;
+    display: flex;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container img {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.locations {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../assets/img-locations-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 1200px;
+}
+
+.locations ul {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.locations li {
+    background-color: black;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.contact {
+    margin-top: 20px;
+    height: 200px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+}
+
+.copyright {
+    margin-left: 20px;
+    text-align: left;
 }
