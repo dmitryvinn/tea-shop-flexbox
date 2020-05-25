@@ -8,3 +8,5 @@ The goal is to build a project according to the next specs:
 Here is my attempt at completing the project:
 
 <img src="docs/assets/project.png">
+
+Bad
